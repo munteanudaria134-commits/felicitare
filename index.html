@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>С Днём Рождения! 💖</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Playfair+Display:ital,wght@0,500;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="confetti"></canvas>
+  <div id="hearts"></div>
+
+  <!-- 1. Ecran cu parolă -->
+  <section id="lock" class="screen">
+    <p class="small">Это только для тебя</p>
+    <h1>Введи наш секретный код</h1>
+    <input id="pass" type="password" placeholder="••••" autocomplete="off">
+    <button id="passBtn" class="btn">Войти</button>
+    <p id="passMsg" class="small"></p>
+  </section>
+
+  <!-- 2. Cutia cadou -->
+  <section id="gift" class="screen hidden">
+    <h1>У меня для тебя подарок</h1>
+    <button id="giftBtn" class="giftbox" aria-label="Открыть подарок">🎁</button>
+    <p class="small">Нажми на коробку</p>
+  </section>
+
+  <!-- 3. Pagina principală -->
+  <main id="main" class="hidden">
+    <header class="hero">
+      <p class="small">С Днём Рождения,</p>
+      <h1 id="name">Любимая</h1>
+      <div class="age">17</div>
+      <p class="hero-sub">Этот год рядом с тобой — наш любимый подарок</p>
+      <p class="small scroll">Листай вниз ↓</p>
+    </header>
+
+    <section class="block">
+      <h2>Обратный отсчёт</h2>
+      <p id="cdLabel" class="small"></p>
+      <div id="countdown" class="countdown"></div>
+    </section>
+
+    <section class="block">
+      <h2>Письмо для тебя</h2>
+      <div id="letter" class="letter"></div>
+    </section>
+
+    <section class="block">
+      <h2>Наши моменты</h2>
+      <div id="timeline" class="timeline"></div>
+    </section>
+
+    <section class="block">
+      <h2>Наши фотографии</h2>
+      <div id="gallery" class="gallery"></div>
+    </section>
+
+    <section class="block" id="videoBlock">
+      <h2>Наши видео</h2>
+      <div id="videos" class="videos"></div>
+    </section>
+
+    <section class="block">
+      <h2>Маленькая игра: как хорошо ты меня знаешь?</h2>
+      <div id="quiz" class="quiz"></div>
+    </section>
+
+    <section class="block final">
+      <button id="moreConfetti" class="btn">Я люблю тебя 💖</button>
+    </section>
+  </main>
+
+  <div id="lightbox" class="hidden"><img alt=""></div>
+  <button id="music" class="hidden" aria-label="Музыка">🎵</button>
+  <audio id="audio" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
